@@ -3,11 +3,14 @@ package app
 import data.Car
 
 fun main() {
+    //memakai Secondary Constructor 1
     val toyota = Car("Toyota")
-    val almaz   = Car("Almaz", 2010)
 
-    print("${toyota.brand} ")
+    // Memakai Secondary Constructor 2
+    val almaz   = Car("Wuling", "Almaz" )
+
+    println("${toyota.brand} ")
     println(toyota.year)
-    print("${almaz.brand} ")
-    println(almaz.year)
+    println("${almaz.brand} ")
+    println(almaz.name)
 }
