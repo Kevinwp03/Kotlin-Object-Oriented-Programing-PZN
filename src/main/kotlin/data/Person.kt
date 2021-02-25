@@ -9,6 +9,10 @@ class Person {
         println("Hello $name, my name in $firstName")
     }
 
+    fun sayHello(firstNameParam: String, lastNameParam: String):Unit { //Unit adalah Return Valuenya
+        println("My Name is $firstNameParam $lastNameParam, You can call me $firstName")
+    }
+
     fun run(){
         println("I'm run")
     }
