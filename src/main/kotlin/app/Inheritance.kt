@@ -1,6 +1,7 @@
 package app
 
 import data.Manager
+import data.SuperManager
 import data.VicePresident
 
 fun main() {
