@@ -8,10 +8,10 @@ interface Interaction {
     }
 }
 
-interface Go{
+interface Go: Interaction{
     fun go(){
         println("Go!")
     }
 }
 
-class Human(override val name: String): Interaction, Go
+class Human(override val name: String): Go
