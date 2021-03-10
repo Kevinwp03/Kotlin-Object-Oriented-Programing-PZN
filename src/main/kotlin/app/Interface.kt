@@ -6,4 +6,5 @@ fun main() {
     val human = Human("Kevin")
     human.sayHello("Bro")
     human.go()
+    human.move()
 }
