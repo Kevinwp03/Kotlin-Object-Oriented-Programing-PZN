@@ -7,3 +7,6 @@ fun Student?.sayHello(name: String) { // hanya bisa akses public tidak bisa priv
         println("Hello $name, My name is ${this.name} and my age is ${this.age}")
     }
 }
+
+val Student.upperName: String
+    get() = this.name.toUpperCase()
