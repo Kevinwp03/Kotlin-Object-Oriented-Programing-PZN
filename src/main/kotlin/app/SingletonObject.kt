@@ -11,7 +11,11 @@ fun main() {
     b() // output : Berubah
 
     //Inner object
-    println(Application.Utilities.toUpper("Williams"))
+    //println(Application.Utilities.toUpper("Williams"))
+
+    //Companion Object
+    println(Application.Companion.toUpper("Williams"))
+    println(Application.toUpper("Williams"))
 }
 
 fun a(){

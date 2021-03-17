@@ -1,7 +1,7 @@
 package data
 
 class Application {
-    object Utilities { //nama Objectnya bisa apa saja
+    companion object{
         fun toUpper(value: String): String {
             return value.toUpperCase()
         }
