@@ -1,6 +1,6 @@
 package data
 
-class Application {
+class Application (val name: String) {
     companion object{
         fun toUpper(value: String): String {
             return value.toUpperCase()
