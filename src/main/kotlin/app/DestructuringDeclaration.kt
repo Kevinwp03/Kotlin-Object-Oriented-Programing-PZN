@@ -1,6 +1,7 @@
 package app
 
 import data.Game
+import data.Login
 import data.MinMax
 
 fun minmax(value1: Int, value2: Int): MinMax {
@@ -8,6 +9,12 @@ fun minmax(value1: Int, value2: Int): MinMax {
         value1 > value2 -> MinMax(value1, value2)
         else -> MinMax(value1, value2)
     }
+}
+
+typealias loginCallback = (Login) -> Boolean
+
+fun login(login: Login, callback: loginCallback): Boolean {
+    return callback(login)
 }
 
 fun main() {
@@ -26,4 +33,14 @@ fun main() {
     val (min, _) = minmax(10, 100)
     println(min)
 //    println(max)
+
+    //Destructuring Lambda Parameter
+    val login = Login("Kevin", "Secret")
+//    login(login){ login ->
+//        login.username == "Kevin" && login.password == "Secret"
+//    }
+    val success = login(login) { (username, password) ->
+        username == "Kevin" && password == "Secret"
+    }
+    println(success)
 }
