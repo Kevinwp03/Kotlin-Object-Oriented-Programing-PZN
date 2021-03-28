@@ -42,5 +42,5 @@ fun main() {
     val success = login(login) { (username, password) ->
         username == "Kevin" && password == "Secret"
     }
-    println(success)
+    println(success) //output : true
 }
