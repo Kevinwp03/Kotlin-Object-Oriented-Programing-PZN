@@ -13,6 +13,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test-junit"))
+    implementation(kotlin("reflect"))
 }
 
 tasks.test {
