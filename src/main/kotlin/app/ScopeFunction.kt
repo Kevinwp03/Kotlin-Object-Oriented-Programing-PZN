@@ -19,7 +19,7 @@ fun main() {
     }
     println(result)
 
-    //Run
+    //Run m
     val result2 : String= student.run {
         "Name is ${this.name}, age ${this.age}"
     }
